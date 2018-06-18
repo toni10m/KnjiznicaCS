@@ -1,0 +1,13 @@
+//Print predogled
+        private void printPreviewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ClsPrint _ClsPrint = new ClsPrint(dataGridView1, "Izpis Podatkov");
+            _ClsPrint.PrintPreviewForm();
+        }
+
+        //Printanje
+        private void printToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            ClsPrint _ClsPrint = new ClsPrint(dataGridView1, "Izpis Podatkov");
+            _ClsPrint.PrintForm();
+        }
